@@ -6,7 +6,7 @@
   "homepage": "https://catp757.github.io/e-plantShopping",
   "scripts": {
     "prestart": "npm run build",
-    "start:": "yarn start",
+    "start:": "vite",
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
