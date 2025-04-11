@@ -2,15 +2,14 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/e-plantShopping/',  // Keep this as it is for GitHub Pages
+  base: '/e-plantShopping/',  // Keep this for GitHub Pages routing
   plugins: [react()],
   build: {
-    outDir: 'dist',             // Output directory
-    assetsDir: '',              // Ensures assets go directly in the root of dist/ without the /e-plantShopping/ prefix
+    outDir: 'dist',  // Output directory
+    assetsDir: '',   // This ensures assets are placed directly inside dist, not in a separate folder
     rollupOptions: {
       output: {
-        // Ensures that assets (JS, CSS) have the correct paths
-        assetFileNames: '[name]-[hash].[ext]',
+        assetFileNames: '[name]-[hash].[ext]',  // Ensure assets are named properly without extra prefixes
         chunkFileNames: '[name]-[hash].js',
         entryFileNames: '[name]-[hash].js',
       },
