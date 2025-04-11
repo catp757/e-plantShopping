@@ -1,1 +1,1 @@
-# coding-project-template
+# Plant Shopping React app
