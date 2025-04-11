@@ -107,6 +107,13 @@ body {
     margin-top: 10px;
 }
 
+.product-button.added-to-cart {
+    background-color: grey; /* Grey when product is added */
+}
+.product-button.added-to-cart:hover {
+    background-color: grey; /* Keep grey on hover when added to cart */
+} 
+
 .product-button:hover {
     background-color: #c0392b;
 }
